@@ -1,0 +1,40 @@
+section {
+  margin: 2rem 14rem;
+
+  .intestation {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: crimson;
+    }
+  }
+
+  main {
+    background: linear-gradient(135deg, rgba(180, 224, 224, 0.9) 0%, rgba(180, 224, 224, 0.6) 100%);
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+      font-size: 2rem;
+    }
+
+    .img-mail {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 2rem;
+    }
+
+    .mail {
+      color: #444;
+      font-size: 2rem;
+    }
+  }
+}

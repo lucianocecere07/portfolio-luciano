@@ -1,0 +1,21 @@
+section {
+  margin: 2rem 14rem;
+
+  .intestation{
+    display: flex;
+    justify-content: center;
+    h1{
+      font-size: 2rem;
+      font-weight: bold;
+      color: crimson;
+    }
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

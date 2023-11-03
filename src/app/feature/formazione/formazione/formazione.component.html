@@ -1,0 +1,30 @@
+<section>
+  <div class="intestation">
+    <h1><u>FORMAZIONE</u></h1>
+  </div>
+  <main>
+    <app-formation-experience-card *ngFor="let item of formationMenu"
+                                   [nomeAttivita]="item.titolo" [luogoAttivita]="item.luogo" [dataSvolgimento]="item.data"
+                                   (click)="openModal(item)"
+    >
+    </app-formation-experience-card>
+  </main>
+</section>
+
+<div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+  <div class="modal-formation">
+    <div class="modal-close">
+      <button type="button" class="btn btn-danger btn-sm" (click)="closeModal()">X</button>
+    </div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>{{ selectedCard.titolo | uppercase }}</h2>
+      </div>
+      <div class="modal-content">
+        <p><i>{{ selectedCard.luogo }}</i></p>
+        <p>{{ selectedCard.info }}</p>
+        <p><small>{{ selectedCard.data }}</small></p>
+      </div>
+    </div>
+  </div>
+</div>

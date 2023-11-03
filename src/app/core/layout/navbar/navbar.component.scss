@@ -1,0 +1,41 @@
+.nav-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  height: 10%;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  border-bottom: 1px solid rgba(217, 214, 214, 0.53);
+
+  div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    img{
+      height: 70%;
+      cursor: pointer;
+    }
+  }
+
+  .nav-menu{
+    gap: 2rem;
+    height: 100%;
+
+    .item-menu{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      height: 100%;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2f2f3d;
+
+      &:hover, &.active-link{
+        border-bottom: 3px solid crimson;
+        color: lightslategray;
+      }
+    }
+  }
+}

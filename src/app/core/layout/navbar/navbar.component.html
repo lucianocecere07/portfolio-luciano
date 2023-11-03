@@ -1,0 +1,11 @@
+<nav class="nav-class">
+  <div class="logo">
+    <img src="/assets/image-nav/waving-hand.png" alt="waving-hand" routerLink="home">
+  </div>
+  <div class="nav-menu">
+    <span *ngFor="let item of itemMenu" class="item-menu" routerLink="{{item}}" routerLinkActive="active-link">{{item | titlecase}}</span>
+  </div>
+  <div class="toggle-dark" (click)="isToggle()">
+    <img [src]="toggle ? '/assets/image-nav/light-sun.png' : '/assets/image-nav/dark-moon.png'">
+  </div>
+</nav>

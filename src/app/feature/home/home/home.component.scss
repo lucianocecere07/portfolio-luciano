@@ -1,0 +1,49 @@
+section{
+  margin: 5rem 14rem;
+
+  main{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    .presentation{
+      width: 50%;
+      h1{
+        font-size: 2rem;
+        span{
+          color: crimson;
+        }
+      }
+    }
+
+    .photo{
+      width: auto;
+      border: 1px solid rgba(75, 162, 162, 0.85);
+      background-color: rgba(75, 162, 162, 0.85);
+      border-radius: 1rem;
+      padding: 0.7rem;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts{
+    display: flex;
+    gap: 3rem;
+
+    a{
+      color: rgba(75, 162, 162, 0.85);
+    }
+
+    i{
+      font-size: 2rem;
+      cursor: pointer;
+
+      &:hover{
+        color: crimson;
+      }
+    }
+  }
+}

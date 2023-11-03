@@ -1,0 +1,13 @@
+<section>
+  <div class="intestation">
+    <h1><u>COMPETENZE DIGITALI</u></h1>
+  </div>
+  <main>
+    <div>
+      <app-skill-card *ngFor="let skill of frontendSkills" [logo]="skill.logo" [name]="skill.name"></app-skill-card>
+    </div>
+    <div>
+      <app-skill-card *ngFor="let skill of backendSkills" [logo]="skill.logo" [name]="skill.name"></app-skill-card>
+    </div>
+  </main>
+</section>
