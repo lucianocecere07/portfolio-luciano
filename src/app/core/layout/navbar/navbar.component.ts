@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  toggle: boolean = false;
+  // toggle: boolean = false;
   itemMenu: any[] = ["home", "profilo", "formazione", "esperienze", "competenze", "contatti"];
 
-  isToggle(){
-    this.toggle = !this.toggle;
-  }
+  // isToggle(){
+  //   this.toggle = !this.toggle;
+  // }
 }

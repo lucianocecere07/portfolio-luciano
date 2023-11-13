@@ -1,0 +1,18 @@
+.switch {
+  position: absolute;
+  top: 0.8rem;
+  right: 10rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.big-label {
+  font-size: 2rem;
+}
+
