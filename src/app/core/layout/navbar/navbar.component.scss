@@ -37,4 +37,18 @@
       }
     }
   }
+
+  .switch {
+    cursor: pointer;
+
+    input {
+      width: 0;
+      height: 0;
+    }
+
+    .icon img{
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 }

@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  // toggle: boolean = false;
   itemMenu: any[] = ["home", "profilo", "formazione", "esperienze", "competenze", "contatti"];
 
-  // isToggle(){
-  //   this.toggle = !this.toggle;
-  // }
+  isChecked = false;
+
+  toggleDarkMode(event: any): void {
+    const checked = event.target.checked;
+    if (checked) {
+      document.body.classList.add('dark-mode');
+      this.isChecked = true;
+    } else {
+      document.body.classList.remove('dark-mode');
+      this.isChecked = false;
+    }
+  }
 }

@@ -5,8 +5,10 @@
   <div class="nav-menu">
     <span *ngFor="let item of itemMenu" class="item-menu" routerLink="{{item}}" routerLinkActive="active-link">{{item | titlecase}}</span>
   </div>
-<!--  <div class="toggle-dark" (click)="isToggle()">-->
-<!--    <img [src]="toggle ? '/assets/image-nav/light-sun.png' : '/assets/image-nav/dark-moon.png'">-->
-<!--  </div>-->
-  <div></div>
+  <div>
+    <label class="switch">
+      <input type="checkbox" (change)="toggleDarkMode($event)">
+      <span class="icon"><img src="{{ isChecked ? '/assets/image-nav/light-sun.png' : '/assets/image-nav/dark-moon.png' }}"></span>
+    </label>
+  </div>
 </nav>
