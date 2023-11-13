@@ -3,11 +3,23 @@
     <div class="presentation">
       <h1>Ciao!</h1>
       <h1>Sono <span>Luciano</span></h1>
-      <h1 class="changes">e sono: {{ presentationsItems[currentIndex] }}</h1>
+
+        <ngx-typed-js
+          [strings]="presentationsItems"
+          [loop]="true"
+          [typeSpeed]="50"
+          [showCursor]="true"
+          [backSpeed]="30"
+        >
+          <h1>e sono:
+            <span class="typing"></span>
+          </h1>
+        </ngx-typed-js>
+
       <button type="button" class="btn btn-danger btn-lg" (click)="download()">Curriculum Vitae</button>
     </div>
     <div class="photo">
-      <img src="/assets/home/foto.png" alt="foto-profilo">
+      <img src="/assets/home/foto-cv.png" alt="foto-profilo">
     </div>
   </main>
   <div class="contacts">
