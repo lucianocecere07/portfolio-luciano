@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import {animationAnimation} from "../../../shared/animation/animation.module";
 
 @Component({
   selector: 'app-esperienza',
   templateUrl: './esperienza.component.html',
-  styleUrls: ['./esperienza.component.scss']
+  styleUrls: ['./esperienza.component.scss'],
+  animations: [animationAnimation]
 })
 export class EsperienzaComponent {
   experienceMenu = [

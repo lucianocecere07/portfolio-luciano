@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import {animationAnimation} from "../../../shared/animation/animation.module";
 
 @Component({
   selector: 'app-competenze',
   templateUrl: './competenze.component.html',
-  styleUrls: ['./competenze.component.scss']
+  styleUrls: ['./competenze.component.scss'],
+  animations: [animationAnimation]
 })
 export class CompetenzeComponent {
 

@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import {animationAnimation} from "../../../shared/animation/animation.module";
 
 @Component({
   selector: 'app-formazione',
   templateUrl: './formazione.component.html',
-  styleUrls: ['./formazione.component.scss']
+  styleUrls: ['./formazione.component.scss'],
+  animations: [animationAnimation]
 })
 export class FormazioneComponent {
   formationMenu = [

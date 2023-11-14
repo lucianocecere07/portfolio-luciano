@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {animationAnimation} from "../../../shared/animation/animation.module";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [animationAnimation]
 })
 export class HomeComponent {
   presentationsItems: string[] = ["Java Developer", "Angular Developer", "Spring Boot Developer", "Full Stack Developer"];
